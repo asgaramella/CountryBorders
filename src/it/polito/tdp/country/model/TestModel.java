@@ -10,7 +10,7 @@ public class TestModel {
 		System.out.println("Creo il grafo CountryBorders usando i 3 metodi");
 		
 		start=System.nanoTime() ;
-		//m.creaGrafo1();
+		m.creaGrafo1();
 		end=System.nanoTime() ;
 		System.out.format("Metodo 1: %d ms\n", (end-start)/1000000) ;
 		m.printStats();

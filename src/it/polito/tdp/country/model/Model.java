@@ -20,6 +20,7 @@ public class Model {
 	/**
 	 * Creazione del grafo CountryBorders.
 	 * Prima versione: per ogni coppia di vertici, chiedo al database se esiste un arco.
+	 * Poco efficiente, query molto semplice (confinanti) eseguita n*n volte
 	 */
 	public void creaGrafo1() {
 		
@@ -43,6 +44,7 @@ public class Model {
 	/**
 	 * Creazione del grafo CountryBorders.
 	 * Seconda versione: per ogni vertice, chiedo al database la lista dei vertici ad esso confinanti.
+	 * query più complessa eseguita n volte
 	 */
 	public void creaGrafo2() {
 		
@@ -62,6 +64,7 @@ public class Model {
 	/**
 	 * Creazione del grafo CountryBorders.
 	 * Terza versione: una sola volta, chiedo al database l'elenco delle coppie di vertici confinanti.
+	 * query complessa eseguita 1 sola volta
 	 */
 	public void creaGrafo3() {
 		
