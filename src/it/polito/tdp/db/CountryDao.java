@@ -26,6 +26,13 @@ public class CountryDao {
 			
 			while(res.next()) {
 				list.add(new Country(res.getInt("CCode"), res.getString("StateAbb"), res.getString("StateNme"))) ;
+				
+				//II versione con controllo ogg già esistenti
+				
+				//Country c=new Country(res.getInt("CCode"), res.getString("StateAbb"), res.getString("StateNme"));
+				//c=countryIdMap.put(c);
+				//list.add(c);
+			
 			}
 			
 			res.close();
